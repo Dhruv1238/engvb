@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import { NavbarSimple } from './components/NavBar'
 
 function App() {
@@ -9,7 +6,9 @@ function App() {
 
   return (
     <>
+    <div id='--black-gradient' className='h-screen w-screen bg-primary'>
       <NavbarSimple />
+      </div>
     </>
   )
 }
