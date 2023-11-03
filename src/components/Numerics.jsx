@@ -49,14 +49,14 @@ export const Numerics = () => {
     return (
         <>
 
-            <div ref={ref} className=' flex flex-col sm:flex-row sm:justify-between items-start px-6 lg:px-16'>
+            <div ref={ref} className=' flex flex-col sm:flex-row sm:justify-between items-start px-6 lg:px-16 mt-10'>
                 <div className='flex item-center gap-2 justify-center '>
                     <RollingNumbers value={200} inView={inView} />
                     <div className='hidden lg:flex lg:justify-center lg:items-center'>
                         <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>+ Projects Completed</div></Typography>
                     </div>
                     <div className='lg:hidden flex justify-center '>
-                        <Typography color="white" variant="h6" className='flex items-center'><div className='text-gradient'>+ Projects Completed</div></Typography>
+                        <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient'>+ Projects Completed</div></Typography>
                     </div>
                 </div>
                 <div className='flex item-center gap-2 justify-center '>
@@ -65,7 +65,7 @@ export const Numerics = () => {
                         <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>+ Years Experienced Staff</div></Typography>
                     </div>
                     <div className='lg:hidden flex justify-center '>
-                        <Typography color="white" variant="h6" className='flex items-center'><div className='text-gradient'>+ Years Experienced Staff</div></Typography>
+                        <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient'>+ Years Experienced Staff</div></Typography>
                     </div>
                 </div>
                 <div className='flex item-center gap-2 justify-center '>
@@ -74,7 +74,7 @@ export const Numerics = () => {
                         <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>% Placement Assistance</div></Typography>
                     </div>
                     <div className='lg:hidden flex justify-center '>
-                        <Typography color="white" variant="h6" className='flex items-center'><div className='text-gradient'>% Placement Assistance</div></Typography>
+                        <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient'>% Placement Assistance</div></Typography>
                     </div>
                 </div>
             </div>

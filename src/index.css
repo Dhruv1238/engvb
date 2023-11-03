@@ -47,3 +47,20 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+/* .feature-card {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+} */
+.feature-card {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.feature-card.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
