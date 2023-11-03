@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section id="home" className={`flex md:flex-row flex-col py-6`}>
             <div className={`flex-1 flex justify-center items-start flex-col xl:px-24 sm:px-16 px-6`}>
-                <Card className="flex flex-row items-center py-[6px] px-4 backdrop-filter bg-gradient-to-tl from-primary to-gray-900 rounded-[10px] mb-2">
+                <Card className="flex flex-row items-center py-[6px] px-4 backdrop-filter backdrop-blur-lg wobble animate-wobble bg-gradient-to-tl from-primary to-gray-900 rounded-[10px] mb-2">
                     <ReceiptPercentIcon className="w-6 h-6 text-white" />
                     <p className={`font-poppins font-normal text-white text-[18px] leading-[30.8px] ml-2`}>
                         <span className="text-white">20%</span> Discount If{" "}
