@@ -21,7 +21,7 @@ const Hero = () => {
                         <span className="text-gradient">Generation</span>{" "}
                     </h1>
                     <div className="xs:flex hidden md:mr-4 mr-0">
-                        <Button variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full" size="lg">
+                        <Button variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full hover:scale-105 duration-300" size="lg">
                             Get Started
                             <ArrowTrendingUpIcon className="w-6 h-6" />
                         </Button>
