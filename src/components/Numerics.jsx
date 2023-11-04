@@ -44,8 +44,6 @@ const RollingNumbers = ({ value, inView }) => {
 export const Numerics = () => {
     const [ref, inView] = useInView({ threshold: 0.2 });
 
-    console.log(inView);
-
     return (
         <>
 

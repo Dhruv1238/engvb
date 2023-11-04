@@ -12,7 +12,7 @@ function App() {
     <div id='--black-gradient' className='h-screen w-screen bg-primary overflow-x-hidden'>
       <NavbarSimple />
       <Hero />
-      <Numerics />
+      <Numerics id='numerics' />
       <Courses />
       </div>
     </>

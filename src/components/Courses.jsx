@@ -30,7 +30,7 @@ export const Courses = () => {
             <Typography color="white" variant="h1" className='text-center font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full py-12'>
                 Best Programs
             </Typography>
-            <div className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 pb-24'>
+            <div id='numerics' className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 pb-24'>
                 <AnimatedCard>
                     <Typography color="white" variant="h1">
                         REVIT
