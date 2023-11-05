@@ -17,8 +17,8 @@ const Hero = () => {
 
                 <div className="flex flex-row justify-between items-center w-full">
                     <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-                        The Next <br className="sm:block hidden" />{" "}
-                        <span className="text-gradient">Generation</span>{" "}
+                        Shaping <br className="sm:block hidden" />{" "}
+                        <span className="text-gradient">Career in</span>{" "}
                     </h1>
                     <div className="xs:flex hidden md:mr-4 mr-0">
                         <Button variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full hover:scale-105 duration-300" size="lg">
@@ -29,12 +29,10 @@ const Hero = () => {
                 </div>
 
                 <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-                    BIM Training
+                    Virtual Construction
                 </h1>
                 <p className={`font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5`}>
-                    Our team of experts uses a methodology to identify the BIM courses
-                    most likely to fit your needs. We emphasize on the quality of course content,
-                    course fees, and instructor experience.
+                    ENG VB is a leading Digital Twin, BIM C MEP Design Consultancy firm in India, having Head office in Navi Mumbai. ENG VB is one of the pioneers in the integration of 3D Virtual model in AEC industry, which is now helping Builders, Architects, Engineers, and Contractors in Visualizing the Project before construction.
                 </p>
 
             </div>
@@ -58,5 +56,6 @@ const Hero = () => {
         </section>
     );
 };
+
 
 export default Hero;
