@@ -84,7 +84,7 @@ export const Courses = () => {
             <Typography className="text-gradient font-bold text-md md:text-xl text-center wobble animate-wobble p-10">
                 Click the Courses to get the Detailed Syllabus!!
             </Typography>
-            <div id='numerics' className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 pb-24'>
+            <div id='numerics' className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 p-24 pb-14'>
                 <div onClick={handleRevitMEPPdf} className=" cursor-pointer">
                     <AnimatedCard>
                         <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">

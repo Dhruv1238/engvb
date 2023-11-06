@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import engvb from '../assets/engVB.png'
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function NavList() {
     return (
@@ -18,13 +18,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-large"
             >
-                <Link to="numerics"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
-                    Home
-                </Link>
+                <Link to='/'>Home</Link>
             </Typography>
             <Typography
                 as="li"
@@ -32,9 +26,11 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
+                <Link to='/about'>
                 <a href="#" className="flex items-center hover:text-[#fb672c] transition-colors">
-                    Features
+                    About
                 </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"

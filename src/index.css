@@ -80,3 +80,24 @@
 .animate-wobble {
   animation: wobble 2s ease-in-out infinite;
 }
+
+.feature-div {
+  /* background: var(--black-gradient);
+  box-shadow: var(--card-shadow); */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.feature-div.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
