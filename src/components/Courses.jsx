@@ -46,7 +46,6 @@ const SystemsList = ({ v1, v2, v3, v4, v5 }) => {
         </>
     );
 };
-
 const handleMEPPdf = () => {
     const link = document.createElement("a");
     link.href = "/MEP.pdf";
@@ -58,6 +57,20 @@ const handleRevitMEPPdf = () => {
     const link = document.createElement("a");
     link.href = "/RevitMEP.pdf";
     link.download = "Revit MEP Syllabus - ENG VB Learning.pdf";
+    link.click();
+};
+
+const handleRevitStructPdf = () => {
+    const link = document.createElement("a");
+    link.href = "/RevitStruct.pdf";
+    link.download = "Revit Structure Syllabus- ENG VB Learning.pdf";
+    link.click();
+};
+
+const handleRevitArchPdf = () => {
+    const link = document.createElement("a");
+    link.href = "/RevitArch.pdf";
+    link.download = "Revit Architecture Syllabus - ENG VB Learning.pdf";
     link.click();
 };
 
@@ -88,23 +101,27 @@ export const Courses = () => {
                         <SystemsList v1="Electrical Systems" v2="Plumbing and Drainage Systems" v3="Fire Protection Systems" v4="HVAC System" v5="FA, PA, CCTV, and Security Systems" />
                     </AnimatedCard>
                 </div>
+                <div onClick={handleRevitStructPdf} className=" cursor-pointer">
                 <AnimatedCard>
                     <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
                         REVIT Structure
                     </Typography>
                     <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Starting and Modeling Structural Projects" v4="Quantification, Detailing, and Scheduling" v5="Tests,&nbsp;Certification,&nbsp;much&nbsp;more" />
                 </AnimatedCard>
+                </div>
+                <div onClick={handleRevitArchPdf} className=" cursor-pointer">
                 <AnimatedCard>
                     <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
                         REVIT Architecture
                     </Typography>
                     <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling Architecture Projects" v4="Quantification, Detailing, and Scheduling" v5="Massing Tools, Tests, Certification, and Personality" />
                 </AnimatedCard>
-                <AnimatedCard>
+                </div>
+                {/* <AnimatedCard>
                     <Typography color="white" variant="h1">
                         Revit Automation
                     </Typography>
-                </AnimatedCard>
+                </AnimatedCard> */}
             </div>
         </>
     )
