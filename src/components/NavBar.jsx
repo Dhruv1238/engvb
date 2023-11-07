@@ -18,7 +18,9 @@ function NavList() {
                 color="white"
                 className="p-1 font-large"
             >
-                <Link to='/'>Home</Link>
+                <Link to='/'><a href="#" className="flex items-center hover:text-[#fb672c] transition-colors">
+                    Home
+                </a></Link>
             </Typography>
             <Typography
                 as="li"
