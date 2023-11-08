@@ -9,8 +9,11 @@ const ContactForm = () => {
     };
 
     const config = {
-        SecureToken: "2748f8f9-f38a-49fb-afc2-7bb986e30eab",
-        To: "dhurv@weeshare.co",
+        // SecureToken: "2748f8f9-f38a-49fb-afc2-7bb986e30eab",
+        Username:"dhruv4075@gmail.com",
+        Password:"5907061DD80AA72F8929A2EDAA483DE83153",
+        Host: "smtp.elasticemail.com",
+        To: "dhruv.sharma@somaiya.edu",
         From: "dhruv.sharma@somaiya.edu",
         Subject: formState.subject,
         Body: formState.message,
@@ -19,8 +22,7 @@ const ContactForm = () => {
     const sendEmail = async () => {
         // console.log(window.Email);
         console.log(config);
-        window.Email.send(config)
-        console.log(window.Email.send(config));
+        await window.Email.send(config).then(console.log(window.Email.send(config)));
     };
 
     console.log(formState.subject);
