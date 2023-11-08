@@ -5,6 +5,7 @@ import { Numerics } from '../components/Numerics';
 import { Courses } from '../components/Courses';
 import { Facilities } from '../components/Facilities';
 import AboutUs from '../components/AboutUs';
+import ContactForm from '../components/ContactUs';
 
 export const Landing = () => {
     return (
@@ -16,6 +17,7 @@ export const Landing = () => {
                 <Courses />
                 <Facilities />
                 <AboutUs />
+                <ContactForm />
             </div>
         </>
     );
