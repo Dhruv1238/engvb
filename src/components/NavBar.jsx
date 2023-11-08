@@ -28,11 +28,11 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <Link to='/about'>
+                {/* <Link to='/about'> */}
                 <a href="#" className="flex items-center hover:text-[#fb672c] transition-colors">
                     About
                 </a>
-                </Link>
+                {/* </Link> */}
             </Typography>
             <Typography
                 as="li"
