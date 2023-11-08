@@ -9,7 +9,7 @@ export const Router=()=>{
         <>
         <Routes>
             <Route path='/' element={<Landing/>}/>
-            <Route path='/about' element={<About/>}/>
+            {/* <Route path='/about' element={<About/>}/> */}
         </Routes>
         </>
     )
