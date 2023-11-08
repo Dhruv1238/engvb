@@ -7,6 +7,7 @@ import { Facilities } from '../components/Facilities';
 import AboutUs from '../components/AboutUs';
 import ContactForm from '../components/ContactUs';
 import SyllabusMailer from '../components/SyllabusMailer';
+import { Footer } from '../components/Footer';
 
 export const Landing = () => {
     return (
@@ -19,7 +20,7 @@ export const Landing = () => {
                 <Facilities />
                 <AboutUs />
                 <ContactForm />
-                {/* <SyllabusMailer courses="MEP" /> */}
+                <Footer />
             </div>
         </>
     );
