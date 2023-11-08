@@ -10,16 +10,16 @@ const ContactForm = () => {
 
     const config = {
         SecureToken: "2748f8f9-f38a-49fb-afc2-7bb986e30eab",
-        To: "dhruv.sharma@somaiya.edu",
+        To: ["dhruv.sharma@somaiya.edu", formState.email],
         From: "dhruv4075@gmail.com",
-        Subject: "Enquiry From ENGVB Learning Website",
+        Subject: "Response from: Enquiry form ENGVB Learning Website",
         Body: formState,
     }
 
     const sendEmail = async () => {
         // console.log(window.Email);
         console.log(config);
-        await window.Email.send(config).then(console.log(window.Email.send(config)));
+        await window.Email.send(config).then(console.log(window.Email));
     };
 
     // console.log(formState.subject);
@@ -29,6 +29,8 @@ const ContactForm = () => {
     return (
         <>
             <form className='flex flex-col gap-3 justify-center items-center' onChange={changeHandler}>
+                <Input type="text" name="name" label='name' />
+                <Input type="email" name="email" label='email' />
                 <Input type="text" name="systum" label='subject' />
                 <Textarea name="message" label='message' />
                 {/* <input type="submit" value="Submit" /> */}
