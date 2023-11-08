@@ -6,13 +6,13 @@ import { Typography } from '@material-tailwind/react';
 const AboutUs = () => (
     <>
         <Typography color="white" variant="h2" className='flex items-center justify-center pt-20'><div className='text-gradient'>About Us</div></Typography>
-        <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 px-10 md:px-10 lg:px-4 2xl:px-20 py-20'>
-            <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  min-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 ml-5 feedback-card">
+        <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 px-1 md:px-10 lg:px-4 2xl:px-20 py-20'>
+            <div className="flex justify-between flex-col px-5 py-12 rounded-[20px]  md:mr-10 sm:mr-5 m-5 feedback-card">
                 {/* <img src={quotes} alt="double_quotes" className="w-[42.6px] h-[27.6px] object-contain" /> */}
                 <BookmarkIcon className='w-[42.6px] h-[27.6px] object-contain text-blue-400 ' />
 
-                <div className={`flex-1 flex justify-center items-center md:my-0 my-10 relative`}>
-                    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10">
+                <div className={`flex-1 flex justify-center items-center md:my-0 relative`}>
+                    <p className="font-poppins font-normal md:text-[18px] leading-[32.4px] text-white my-10">
                         Mr. Sumair, is Masters in Civil Engineering, has proven and progressive experience in business development,
                         project
                         management and BIM with consulting and contracting firm.
@@ -43,11 +43,11 @@ const AboutUs = () => (
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  min-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
+            <div className="flex justify-between flex-col px-5 py-12 rounded-[20px] md:mr-10 sm:mr-5 m-5 feedback-card">
                 {/* <img src={quotes} alt="double_quotes" className="w-[42.6px] h-[27.6px] object-contain" /> */}
                 <BookmarkIcon className='w-[42.6px] h-[27.6px] object-contain text-blue-400 ' />
                 <div className={`flex-1 flex justify-center items-center md:my-0 my-10 relative`}>
-                    <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10">
+                    <p className="font-poppins font-normal md:text-[18px] leading-[32.4px] text-white my-10">
                         Mr. Ahmed is the Co-founder and Director at ENG VB one of the leading BIM Consultants.
                         A Mechanical
                         engineering and P.G.

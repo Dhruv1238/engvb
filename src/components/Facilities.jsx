@@ -37,18 +37,18 @@ export const Facilities = () => {
                 </div>
                 <div className='flex item-center gap-2 justify-center '>
                     <div className='hidden lg:flex lg:justify-center lg:items-center'>
-                        <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>Convenient Batch Timings</div></Typography>
-                    </div>
-                    <div className='lg:hidden flex justify-center '>
-                        <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient m-3'>Convenient Batch Timings</div></Typography>
-                    </div>
-                </div>
-                <div className='flex item-center gap-2 justify-center '>
-                    <div className='hidden lg:flex lg:justify-center lg:items-center'>
                         <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>Site visits to get Hands-on Experience</div></Typography>
                     </div>
                     <div className='lg:hidden flex justify-center '>
                         <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient m-3'>Site visits to get Hands-on Experience</div></Typography>
+                    </div>
+                </div>
+                <div className='flex item-center gap-2 justify-center '>
+                    <div className='hidden lg:flex lg:justify-center lg:items-center'>
+                        <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>Convenient Batch Timings</div></Typography>
+                    </div>
+                    <div className='lg:hidden flex justify-center '>
+                        <Typography color="white" variant="h5" className='flex items-center'><div className='text-gradient m-3'>Convenient Batch Timings</div></Typography>
                     </div>
                 </div>
             </AnimatedDiv>
