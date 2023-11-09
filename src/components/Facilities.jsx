@@ -27,7 +27,7 @@ export const Facilities = () => {
     return (
         <>
             <AnimatedDiv>
-                <div className='flex item-center gap-2 justify-center slide-in'>
+                <div id="fec" className='flex item-center gap-2 justify-center slide-in'>
                     <div className='hidden lg:flex lg:justify-center lg:items-center'>
                         <Typography color="white" variant="h3" className='flex items-center'><div className='text-gradient'>Online/Offline Training</div></Typography>
                     </div>

@@ -9,9 +9,10 @@ export function Footer() {
         window.open('https://maps.app.goo.gl/JPJ1Fftwbbz9CK7t9', '_blank');
     }
 
-    // const handleScroll = () => {
-    //     window.scrollTo(0, 0);
-    // }
+    const scrollIntoView = (name) => {
+        const element = document.getElementById(name);
+        element.scrollIntoView({ behavior: "smooth", duration: 30 });
+    };
 
     return (
         <footer className="w-full bg-primary p-8">
@@ -22,9 +23,9 @@ export function Footer() {
                         <li>
                             <Typography
                                 as="a"
-                                href="#"
+                                onClick={() => scrollIntoView('aboutus')}
                                 color="white"
-                                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 cursor-pointer"
                             >
                                 About Us
                             </Typography>
@@ -32,11 +33,11 @@ export function Footer() {
                         <li>
                             <Typography
                                 as="a"
-                                href="#"
+                                onClick={() => scrollIntoView('fec')}
                                 color="white"
-                                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 cursor-pointer"
                             >
-                                License
+                                Key Aspects
                             </Typography>
                         </li>
                     </ul>
@@ -52,13 +53,13 @@ export function Footer() {
                             +91 98190 79636
                         </Typography>
                         <div className="flex flex-row font-normal transition-colors hover:text-blue-500 focus:text-blue-500 items-start gap-y-2 max-w-xs">
-                            <MapPinIcon className='w-16 h-16 mr-5 text-white' />
-                            <Typography type="a" onClick={handleRedirect} color="white" className="font-normal cursor-pointer text-start transition-colors hover:text-blue-500 focus:text-blue-500">
+                            <Typography type="a" onClick={handleRedirect} color="white" className="flex flex-row font-normal cursor-pointer text-start transition-colors hover:text-blue-500 focus:text-blue-500">
+                                <MapPinIcon className='w-16 h-16 mr-5 text-white' />
                                 Hawares Centurion Mall, Sector 19A (10A-Plot No. 88/91, Nerul East, Navi Mumbai, Maharashtra 400706
                             </Typography>
                         </div>
                     </div>
-                    {/* <ArrowUpIcon className='w-10 h-10 text-white cursor-pointer' onClick={handleScroll} /> */}
+                    <ArrowUpIcon className='w-10 h-10 text-white cursor-pointer self-end' onClick={() => scrollIntoView('nav')} />
                 </div>
             </div>
             <hr className="my-8 border-white-50" />

@@ -2,8 +2,12 @@ import React from "react";
 import robot from "../assets/robot.svg";
 import { Button, Card } from "@material-tailwind/react";
 import { ReceiptPercentIcon, ArrowTrendingUpIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-scroll";
 
 const Hero = () => {
+    const scrollIntoView = () => {
+        document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
+    }
     return (
         <section id="home" className={`flex md:flex-row flex-col py-6`}>
             <div className={`flex-1 flex justify-center items-start flex-col xl:px-24 sm:px-16 px-6`}>
@@ -21,10 +25,12 @@ const Hero = () => {
                         <span className="text-gradient">Career in</span>{" "}
                     </h1>
                     <div className="xs:flex hidden md:mr-4 mr-0">
-                        <Button variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full hover:scale-105 duration-300" size="lg">
-                            Get Started
-                            <ArrowTrendingUpIcon className="w-6 h-6" />
-                        </Button>
+                        {/* <Link to="courses" smooth={true} duration={500}> */}
+                            <Button onClick={scrollIntoView} variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full hover:scale-105 duration-300" size="lg">
+                                Get Started
+                                <ArrowTrendingUpIcon className="w-6 h-6" />
+                            </Button>
+                        {/* </Link> */}
                     </div>
                 </div>
 
@@ -48,10 +54,12 @@ const Hero = () => {
             </div>
 
             <div className={`ss:hidden flex justify-center items-center`}>
-                <Button variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full" size="lg">
-                    Get Started
-                    <ArrowTrendingUpIcon className="w-6 h-6" />
-                </Button>
+                {/* <Link to="courses" smooth={true} duration={500}> */}
+                    <Button onClick={scrollIntoView} variant="outlined" color="white" className="my-10 flex flex-row items-center justify-center gap-3 rounded-full" size="lg">
+                        Get Started
+                        <ArrowTrendingUpIcon className="w-6 h-6" />
+                    </Button>
+                {/* </Link> */}
             </div>
         </section>
     );

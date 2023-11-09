@@ -94,7 +94,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className=' grid grid-cols-1 md:grid-cols-2 items-center md:px-20 pt-0 p-9 gap-14'>
+            <div id='contact' className=' grid grid-cols-1 md:grid-cols-2 items-center md:px-20 pt-0 p-9 gap-14'>
                 <Typography className='text-3xl sm:text-5xl lg:text-5xl text-gradient font-bold text-center'>Contact Us</Typography>
                 <form
                     className="flex flex-col gap-3 justify-center items-center text-white"
@@ -107,6 +107,7 @@ const ContactForm = () => {
                         className="text-white"
                         error={errors.name}
                         value={formState.name}
+                        color='white'
                     />
                     <Input
                         type="email"
@@ -115,6 +116,7 @@ const ContactForm = () => {
                         className="text-white"
                         error={errors.email}
                         value={formState.email}
+                        color='white'
                     />
                     <Input
                         type="text"
@@ -123,8 +125,9 @@ const ContactForm = () => {
                         className="text-white"
                         error={errors.course}
                         value={formState.course}
+                        color='white'
                     />
-                    <Textarea name="message" label="Anything Else" className="text-white" value={formState.message} />
+                    <Textarea name="message" label="Anything Else" className="text-white border-white" value={formState.message} />
                     {spin ? <Spinner className="h-8 w-8 text-blue-500" /> : 
                     <Button color="white" variant="outlined" onClick={sendEmail} fullWidth>
                         Submit
