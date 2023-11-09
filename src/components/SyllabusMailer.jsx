@@ -2,7 +2,7 @@ import { Alert, Button, Input, Textarea, Typography, Spinner, Dialog, DialogHead
 import React, { useState } from 'react';
 
 
-const SyllabusMailer = ({courses, onClose}) => {
+const SyllabusMailer = ({ courses, onClose }) => {
     const [open, setOpen] = useState(true);
     const [formState, setFormState] = useState({});
     const [emailSent, setEmailSent] = useState(false);
@@ -21,9 +21,9 @@ const SyllabusMailer = ({courses, onClose}) => {
         setOpen(!open);
         // Call the onClose callback to inform the parent component about the close event
         if (onClose) {
-          onClose();
+            onClose();
         }
-      };
+    };
 
     const changeHandler = (event) => {
         setFormState({ ...formState, [event.target.name]: event.target.value });
@@ -118,7 +118,9 @@ const SyllabusMailer = ({courses, onClose}) => {
         if (email1 === "OK" && email2 === "OK") {
             setEmailSent(true);
             setSpin(false);
-            handleClose();
+            setTimeout(() => {
+                handleClose();
+            }, 5000);
         }
 
         console.log("Email 1 sent:", email1);
@@ -161,7 +163,7 @@ const SyllabusMailer = ({courses, onClose}) => {
                         />
                         <Typography color="white" variant="h6" className='flex items-center'><div className='text-white m-1'>Course :</div><div className='text-gradient m-1'>{course}</div></Typography>
                         <Textarea name="message" label="Anything Else" className="text-white" value={formState.message} />
-                        {spin ? <Spinner className="h-8 w-8 text-blue-500" /> :
+                        {spin ? <Spinner className="h-8 w-8 text-orange-500 self-center" /> :
                             <Button color="white" variant="outlined" onClick={sendEmail} fullWidth>
                                 Submit
                             </Button>}

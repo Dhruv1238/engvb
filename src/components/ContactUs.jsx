@@ -68,12 +68,6 @@ const ContactForm = () => {
             From: "info@engvblearning.com",
             Subject: "Thank you for contacting ENGVB-Learning!",
             Body: `Hi ${formState.name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nRegards,\nTeam ENGVB Learning`,
-            Attachments: [
-                {
-                    name: "MEP.pdf",
-                    data: pdfBase64,
-                }
-            ],
         }
 
         const [email1, email2] = await Promise.all([
