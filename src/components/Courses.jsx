@@ -101,7 +101,7 @@ export const Courses = () => {
                     Courses Offered
                 </Typography>
                 <Typography className="text-gradient font-bold text-md md:text-xl text-center wobble animate-wobble p-10">
-                    Click the Courses to get the Detailed Syllabus!!
+                    Click on Courses to get the Detailed Syllabus!!
                 </Typography>
                 <div id='numerics' className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 p-24 pb-14'>
                     <div onClick={() => handleCourseClick("RevitMEP")} className=" cursor-pointer">

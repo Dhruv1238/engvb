@@ -16,10 +16,10 @@ export const Landing = () => {
 
     useEffect(() => {
         const now = new Date();
-        const dueDateTime = new Date('2023-11-13T23:59:59'); // 13th Nov 2023, 11:59:59 PM
+        const dueDateTime = new Date('2023-11-30'); // 30 Nov 2023
         const daysLeft = Math.ceil((dueDateTime - now) / (1000 * 60 * 60 * 24));
         if (daysLeft <= 2) {
-            const opacity = 1 - (daysLeft === 1 ? daysLeft*2 : daysLeft - 1) * 0.35;
+            const opacity = 1 - (daysLeft === 1 ? daysLeft * 2 : daysLeft - 1) * 0.35;
             setOpacity(opacity);
         }
 
