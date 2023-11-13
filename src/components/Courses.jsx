@@ -18,7 +18,7 @@ const AnimatedCard = ({ children }) => {
 
     return (
         <div ref={ref} >
-            <Card className="feature-card md:h-[40vh] min-h-[40vh] w-full hover:scale-105 duration-300 flex justify-center gap-3 items-start p-9 pr-0" ref={cardRef}>
+            <Card className="feature-card md:h-[40vh] min-h-[40vh] w-full hover:scale-105 duration-300 flex justify-center gap-3 items-center p-9 px-0" ref={cardRef}>
                 {children}
             </Card>
         </div>
@@ -106,34 +106,34 @@ export const Courses = () => {
                 <div id='numerics' className='px-6 md:px-16  grid grid-cols-1 gap-5 sm:grid-cols-2 p-24 pb-14'>
                     <div onClick={() => handleCourseClick("RevitMEP")} className=" cursor-pointer">
                         <AnimatedCard>
-                            <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
+                            <Typography color="white" className=" text-gradient text-center font-bold text-4xl md:text-5xl py-2">
                                 REVIT MEP
                             </Typography>
-                            <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling of MEPF Systems" v4="Quantification, Detailing, and Scheduling" v5="Tests,&nbsp;Certification,&nbsp;much&nbsp;more" />
+                            {/* <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling of MEPF Systems" v4="Quantification, Detailing, and Scheduling" v5="Tests,&nbsp;Certification,&nbsp;much&nbsp;more" /> */}
                         </AnimatedCard>
                     </div>
                     <div onClick={() => handleCourseClick("MEP-Design")} className=" cursor-pointer">
                         <AnimatedCard>
-                            <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
+                            <Typography color="white" className=" text-gradient text-center font-bold text-4xl md:text-5xl py-2">
                                 MEP Design
                             </Typography>
-                            <SystemsList v1="Electrical Systems" v2="Plumbing and Drainage Systems" v3="Fire Protection Systems" v4="HVAC System" v5="FA, PA, CCTV, and Security Systems" />
+                            {/* <SystemsList v1="Electrical Systems" v2="Plumbing and Drainage Systems" v3="Fire Protection Systems" v4="HVAC System" v5="FA, PA, CCTV, and Security Systems" /> */}
                         </AnimatedCard>
                     </div>
                     <div onClick={() => handleCourseClick("Revit-Struct")} className=" cursor-pointer">
                         <AnimatedCard>
-                            <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
+                            <Typography color="white" className=" text-gradient text-center font-bold text-4xl md:text-5xl py-2">
                                 REVIT Structure
                             </Typography>
-                            <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Starting and Modeling Structural Projects" v4="Quantification, Detailing, and Scheduling" v5="Tests,&nbsp;Certification,&nbsp;much&nbsp;more" />
+                            {/* <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Starting and Modeling Structural Projects" v4="Quantification, Detailing, and Scheduling" v5="Tests,&nbsp;Certification,&nbsp;much&nbsp;more" /> */}
                         </AnimatedCard>
                     </div>
                     <div onClick={() => handleCourseClick("Revit-Arch")} className=" cursor-pointer">
                         <AnimatedCard>
-                            <Typography color="white" className=" text-gradient font-bold text-4xl md:text-5xl py-2">
+                            <Typography color="white" className=" text-gradient text-center font-bold text-4xl md:text-5xl py-2">
                                 REVIT Architecture
                             </Typography>
-                            <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling Architecture Projects" v4="Quantification, Detailing, and Scheduling" v5="Massing Tools, Tests, Certification, and Personality" />
+                            {/* <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling Architecture Projects" v4="Quantification, Detailing, and Scheduling" v5="Massing Tools, Tests, Certification, and Personality" /> */}
                         </AnimatedCard>
                     </div>
                     {open && <>

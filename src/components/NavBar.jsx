@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import engvb from '../assets/engVB.png'
+import engvbl from '/systum.png'
 
 function NavList() {
 
@@ -21,7 +22,7 @@ function NavList() {
                 as="li"
                 variant="medium"
                 color="white"
-                className="p-1 font-large"
+                className="p-1 font-medium"
             >
                 <a onClick={() => scrollIntoView('home')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     Home
@@ -86,7 +87,7 @@ export function NavbarSimple() {
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5"
                 >
-                    <img src={engvb} alt="engvb" className="h-12" />
+                    <img src={engvbl} alt="engvb" className="h-16" />
                 </Typography>
                 <div className="hidden lg:block">
                     <NavList />

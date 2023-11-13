@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import logo from '../assets/engVB.png'
-import logo2 from '/engvbl.jpeg'
+import logo2 from '/systum.png'
 import { PhoneArrowUpRightIcon, MapPinIcon, ArrowUpIcon } from "@heroicons/react/24/outline";
 
 export function Footer() {
@@ -17,7 +17,7 @@ export function Footer() {
     return (
         <footer className="w-full bg-primary p-8">
             <div className="flex flex-row flex-wrap items-start justify-center gap-y-6 gap-x-12 bg-primary text-center md:justify-between">
-                <img src={logo} alt="logo-ct" className="h-24" />
+                <img src={logo2} alt="logo-ct" className="h-28" />
                 <div className="flex gap-10">
                     <ul className="flex flex-wrap items-start justify-start gap-y-2 gap-x-8">
                         <li>
