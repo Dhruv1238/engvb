@@ -55,7 +55,7 @@ export function Footer() {
                         <div className="flex flex-row font-normal transition-colors hover:text-blue-500 focus:text-blue-500 items-start gap-y-2 max-w-xs">
                             <Typography type="a" onClick={handleRedirect} color="white" className="flex flex-row font-normal cursor-pointer text-start transition-colors hover:text-blue-500 focus:text-blue-500">
                                 <MapPinIcon className='w-16 h-16 mr-5 text-white' />
-                                Hawares Centurion Mall, Sector 19A (10A-Plot No. 88/91, Nerul East, Navi Mumbai, Maharashtra 400706
+                                Haware Centurion Mall, Sector 19A 10A-Plot No. 88/91, Nerul East, Navi Mumbai, Maharashtra 400706
                             </Typography>
                         </div>
                     </div>

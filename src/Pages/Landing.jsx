@@ -9,24 +9,25 @@ import ContactForm from '../components/ContactUs';
 import SyllabusMailer from '../components/SyllabusMailer';
 import { Footer } from '../components/Footer';
 import { Typography } from '@material-tailwind/react';
+import Certifications from '../components/Certification';
 
 export const Landing = () => {
     const [opacity, setOpacity] = useState(1);
     const [isVisibleRem, setIsVisibleRem] = useState(false);
 
-    useEffect(() => {
-        const now = new Date();
-        const dueDateTime = new Date('2023-11-30'); // 30 Nov 2023
-        const daysLeft = Math.ceil((dueDateTime - now) / (1000 * 60 * 60 * 24));
-        if (daysLeft <= 2) {
-            const opacity = 1 - (daysLeft === 1 ? daysLeft * 2 : daysLeft - 1) * 0.35;
-            setOpacity(opacity);
-        }
+    // useEffect(() => {
+    //     const now = new Date();
+    //     const dueDateTime = new Date('2023-11-30'); // 30 Nov 2023
+    //     const daysLeft = Math.ceil((dueDateTime - now) / (1000 * 60 * 60 * 24));
+    //     if (daysLeft <= 2) {
+    //         const opacity = 1 - (daysLeft === 1 ? daysLeft * 2 : daysLeft - 1) * 0.35;
+    //         setOpacity(opacity);
+    //     }
 
-        if (now > dueDateTime) {
-            setIsVisibleRem(true);
-        }
-    }, []);
+    //     if (now > dueDateTime) {
+    //         setIsVisibleRem(true);
+    //     }
+    // }, []);
 
 
     return (
@@ -47,6 +48,7 @@ export const Landing = () => {
                     <NavbarSimple />
                     <Hero />
                     <Numerics id="numerics" />
+                    <Certifications />
                     <Courses />
                     <Facilities />
                     <AboutUs />

@@ -8,6 +8,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import engvb from '../assets/engVB.png'
 import engvbl from '/systum.png'
+import { Link, useNavigate } from "react-router-dom";
 
 function NavList() {
 
@@ -15,6 +16,8 @@ function NavList() {
         const element = document.getElementById(name);
         element.scrollIntoView({ behavior: "smooth", duration: 30 });
     };
+
+    const navigate = useNavigate();
 
     return (
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
@@ -24,7 +27,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a onClick={() => scrollIntoView('home')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
+                <a onClick={() => navigate('/')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     Home
                 </a>
             </Typography>
@@ -34,11 +37,9 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                {/* <Link to='/about'> */}
-                <a onClick={() => scrollIntoView('courses')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
+                <a onClick={() => { navigate('/courses') }} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     Courses
                 </a>
-                {/* </Link> */}
             </Typography>
             <Typography
                 as="li"
@@ -46,7 +47,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a onClick={() => scrollIntoView('aboutus')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
+                <a onClick={() => navigate('/about-us')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     About
                 </a>
             </Typography>
@@ -56,7 +57,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a onClick={() => scrollIntoView('contact')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
+                <a onClick={() => navigate('/contact-us')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     Contact Us
                 </a>
             </Typography>
@@ -86,6 +87,7 @@ export function NavbarSimple() {
                     href="#"
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5"
+                    onClick={() => { window.location.href = '/' }}
                 >
                     <img src={engvbl} alt="engvb" className="h-16" />
                 </Typography>
