@@ -80,12 +80,11 @@ export function CarouselCustomNavigation(img) {
 
 
 export const ProjectContainer = ({ image, title, desc }) => {
-    console.log(image)
     return (
         <div>
             <AnimatedCard>
-                <div className="flex flex-col md:flex-row gap-10 p-5">
-                    <div className="h-full w-full md:w-96">
+                <div className="flex flex-col md:flex-row gap-16">
+                    <div className=" h-full w-full md:w-96">
                         <CarouselCustomNavigation img={image} />
                     </div>
                     <div className="flex flex-col gap-3 max-w-md">

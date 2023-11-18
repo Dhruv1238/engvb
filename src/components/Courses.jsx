@@ -18,7 +18,7 @@ export const AnimatedCard = ({ children }) => {
 
     return (
         <div ref={ref} >
-            <Card className="feature-card md:h-[40vh] min-h-[40vh] w-full hover:scale-105 duration-300 flex justify-center gap-3 items-center p-9 px-0" ref={cardRef}>
+            <Card className="feature-card min-h-[40vh] w-full hover:scale-105 duration-300 flex justify-center gap-3 items-center p-5 " ref={cardRef}>
                 {children}
             </Card>
         </div>

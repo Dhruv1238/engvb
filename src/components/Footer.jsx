@@ -44,8 +44,8 @@ export function Footer() {
                     <div className="flex flex-col items-start gap-y-2">
 
                         <Typography
-                            //   as="a"
-                            //   href="#"
+                            as="a"
+                            href="tel:+919819079636"
                             color="white"
                             className="font-normal flex transition-colors hover:text-blue-500 focus:text-blue-500"
                         >

@@ -94,7 +94,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <div id='contact' className=' grid grid-cols-1 md:grid-cols-2 items-center md:px-20 pt-0 p-9 gap-14'>
+            <div id='contact' className=' grid grid-cols-1 md:grid-cols-2 items-center md:px-20 pt-16 p-9 gap-14'>
                 <Typography className='text-3xl sm:text-5xl lg:text-5xl text-gradient font-bold text-center'>Contact Us</Typography>
                 <form
                     className="flex flex-col gap-3 justify-center items-center text-white"

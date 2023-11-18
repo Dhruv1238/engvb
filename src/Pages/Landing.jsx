@@ -42,9 +42,9 @@ export const Landing = () => {
             <Hero />
             <Numerics />
             <Certifications />
-            <Courses />
+            {/* <Courses /> */}
             <Facilities />
-            <AboutUs />
+            {/* <AboutUs /> */}
             <ContactForm />
             <Footer />
             {/* )} */}
