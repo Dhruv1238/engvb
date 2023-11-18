@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import SyllabusMailer from "./SyllabusMailer";
 import { Button, Element } from "react-scroll";
 
-const AnimatedCard = ({ children }) => {
+export const AnimatedCard = ({ children }) => {
     const [ref, inView] = useInView({ threshold: 0.5 });
     const cardRef = useRef(null);
 

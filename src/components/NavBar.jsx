@@ -53,6 +53,15 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
+                <a onClick={() => navigate('/projects')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
+                    Projects
+                </a>
+            </Typography>
+            <Typography
+                as="li"
+                color="white"
+                className="p-1 font-medium"
+            >
                 <a onClick={() => navigate('/contact-us')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
                     Contact Us
                 </a>

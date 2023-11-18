@@ -6,9 +6,7 @@ import { Courses } from '../components/Courses';
 import { Facilities } from '../components/Facilities';
 import AboutUs from '../components/AboutUs';
 import ContactForm from '../components/ContactUs';
-import SyllabusMailer from '../components/SyllabusMailer';
 import { Footer } from '../components/Footer';
-import { Typography } from '@material-tailwind/react';
 import Certifications from '../components/Certification';
 
 export const Landing = () => {
@@ -40,20 +38,15 @@ export const Landing = () => {
                     </Typography>
                 </>
             ) : ( */}
-                <div
-                    id="--black-gradient"
-                    className="h-screen w-screen bg-primary overflow-x-hidden"
-                >
-                    <NavbarSimple />
-                    <Hero />
-                    {/* <Numerics /> */}
-                    <Certifications />
-                    <Courses />
-                    <Facilities />
-                    <AboutUs />
-                    <ContactForm />
-                    <Footer />
-                </div>
+            <NavbarSimple />
+            <Hero />
+            <Numerics />
+            <Certifications />
+            <Courses />
+            <Facilities />
+            <AboutUs />
+            <ContactForm />
+            <Footer />
             {/* )} */}
         </>
     );

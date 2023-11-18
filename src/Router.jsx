@@ -5,15 +5,18 @@ import { Landing } from './Pages/Landing';
 import { About } from './Pages/About';
 import { CoursesPage } from './Pages/CoursesPage';
 import { Contact } from './Pages/ContactUs';
+import { Projects } from './Pages/Projects';
 
 export const Router=()=>{
     return(
         <>
+        
         <Routes>
             <Route path='/' element={<Landing/>}/>
             <Route path='/about-us' element={<About/>}/>
             <Route path='/courses' element={<CoursesPage />}/>
             <Route path='/contact-us' element={<Contact />}/>
+            <Route path='/projects' element={<Projects />}/>
         </Routes>
         </>
     )
