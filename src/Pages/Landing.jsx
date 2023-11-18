@@ -12,8 +12,8 @@ import { Typography } from '@material-tailwind/react';
 import Certifications from '../components/Certification';
 
 export const Landing = () => {
-    const [opacity, setOpacity] = useState(1);
-    const [isVisibleRem, setIsVisibleRem] = useState(false);
+    // const [opacity, setOpacity] = useState(1);
+    // const [isVisibleRem, setIsVisibleRem] = useState(false);
 
     // useEffect(() => {
     //     const now = new Date();
@@ -32,22 +32,21 @@ export const Landing = () => {
 
     return (
         <>
-            {isVisibleRem ? (
+            {/* {isVisibleRem ? (
                 <>
                     <Typography className="text-center text-4xl font-bold text-primary">
                         Something Went Wrong
                         Please Complete Your Payment
                     </Typography>
                 </>
-            ) : (
+            ) : ( */}
                 <div
                     id="--black-gradient"
                     className="h-screen w-screen bg-primary overflow-x-hidden"
-                    style={{ opacity: opacity }}
                 >
                     <NavbarSimple />
                     <Hero />
-                    <Numerics id="numerics" />
+                    {/* <Numerics /> */}
                     <Certifications />
                     <Courses />
                     <Facilities />
@@ -55,7 +54,7 @@ export const Landing = () => {
                     <ContactForm />
                     <Footer />
                 </div>
-            )}
+            {/* )} */}
         </>
     );
 };

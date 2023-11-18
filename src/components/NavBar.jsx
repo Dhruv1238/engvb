@@ -23,7 +23,6 @@ function NavList() {
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
             <Typography
                 as="li"
-                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
@@ -33,7 +32,6 @@ function NavList() {
             </Typography>
             <Typography
                 as="li"
-                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
@@ -43,17 +41,15 @@ function NavList() {
             </Typography>
             <Typography
                 as="li"
-                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
                 <a onClick={() => navigate('/about-us')} className="flex items-center hover:text-[#fb672c] transition-colors cursor-pointer">
-                    About
+                    About Us
                 </a>
             </Typography>
             <Typography
                 as="li"
-                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >

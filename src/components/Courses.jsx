@@ -81,7 +81,6 @@ export const Courses = () => {
     const [open, setOpen] = useState(false);
     const [course, setCourse] = useState("");
 
-    console.log(open);
 
 
     const handleCourseClick = (course) => {
