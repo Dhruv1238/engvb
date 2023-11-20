@@ -105,3 +105,19 @@
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 } 
+
+.logo-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-wrapper {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

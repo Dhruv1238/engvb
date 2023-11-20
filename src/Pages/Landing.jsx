@@ -8,6 +8,7 @@ import AboutUs from '../components/AboutUs';
 import ContactForm from '../components/ContactUs';
 import { Footer } from '../components/Footer';
 import Certifications from '../components/Certification';
+import { Clients } from '../components/Clients';
 
 export const Landing = () => {
     // const [opacity, setOpacity] = useState(1);
@@ -44,6 +45,7 @@ export const Landing = () => {
             <Certifications />
             {/* <Courses /> */}
             <Facilities />
+            <Clients />
             {/* <AboutUs /> */}
             <ContactForm />
             <Footer />

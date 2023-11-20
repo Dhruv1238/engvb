@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
 
             <div className={`flex-1 flex justify-center items-center md:my-0 my-10 relative`}>
-                <img src={gif} alt="billing" className="w-[100%] h-[90%] relative z-[5]" />
+                <img src={robot} alt="billing" className="w-[100%] h-[90%] relative z-[5]" />
                 {/* <video autoPlay loop muted className="w-[100%] h-[100%] relative z-[5]">
                     <source src={gif} type="video/mp4" />
                 </video> */}
