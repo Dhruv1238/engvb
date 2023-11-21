@@ -27,7 +27,7 @@ export const Clients = () => {
                         <img src={client4} alt="Autodesk Certified Logo" className="h-40" />
                     </div>
                     <div className="flex flex-col justify-center items-center gap-5">
-                        <img src={client5} alt="Autodesk Certified Logo" className="h-40 w-40" />
+                        <img src={client5} alt="Autodesk Certified Logo" className="h-40" />
                     </div>
                 </div>
             </div>

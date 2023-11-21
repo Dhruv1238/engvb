@@ -10,6 +10,10 @@ function App() {
     window.open(`https://wa.me/9819079636?text=${encodeURIComponent(text)}`, "_blank");
   }
 
+  const LinkedinRedirect = () => {
+    window.open("https://www.linkedin.com/company/engvb-learning/", "_blank");
+  }
+
   return (
     <>
       <BrowserRouter>
@@ -17,7 +21,7 @@ function App() {
           <div className="flex flex-col gap-3 items-start absolute left-0 z-50 top-80">
             <FaFacebook className="text-white text-2xl mr-3 cursor-pointer" />
             <FaInstagram className="text-white text-2xl mr-3 cursor-pointer" />
-            <FaLinkedin className="text-white text-2xl mr-3 cursor-pointer" />
+            <FaLinkedin className="text-white text-2xl mr-3 cursor-pointer" onClick={() => LinkedinRedirect()} />
             <FaWhatsapp className="text-white text-2xl mr-3 cursor-pointer" onClick={() => WhatsappRedirect()} />
           </div>
           <Router />

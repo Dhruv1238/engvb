@@ -5,15 +5,11 @@ import { ReceiptPercentIcon, ArrowTrendingUpIcon } from "@heroicons/react/24/out
 import { Link } from "react-scroll";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import gif from "../assets/Animation.gif";
+import gif from "../assets/animation.gif";
 
 const Hero = () => {
     const scrollIntoView = () => {
         document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
-    }
-
-    const WhatsappRedirect = () => {
-        window.open("https://api.whatsapp.com/send?phone=+917304816137", "_blank");
     }
 
     const navigate = useNavigate();
@@ -57,7 +53,7 @@ const Hero = () => {
             </div>
 
             <div className={`flex-1 flex justify-center items-center md:my-0 my-10 relative`}>
-                <img src={robot} alt="billing" className="w-[100%] h-[90%] relative z-[5]" />
+                <img src={gif} alt="billing" className="w-[100%] h-[90%] relative z-[5] md:rounded-l-lg" />
                 {/* <video autoPlay loop muted className="w-[100%] h-[100%] relative z-[5]">
                     <source src={gif} type="video/mp4" />
                 </video> */}

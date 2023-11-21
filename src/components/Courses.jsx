@@ -135,6 +135,14 @@ export const Courses = () => {
                             {/* <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling Architecture Projects" v4="Quantification, Detailing, and Scheduling" v5="Massing Tools, Tests, Certification, and Personality" /> */}
                         </AnimatedCard>
                     </div>
+                    <div onClick={() => handleCourseClick("NAVISWORKS")} className=" cursor-pointer">
+                        <AnimatedCard>
+                            <Typography color="white" className=" text-gradient text-center font-bold text-4xl md:text-5xl py-2">
+                                NAVISWORKS
+                            </Typography>
+                            {/* <SystemsList v1="Introduction to BIM and Autodesk Revit" v2="Sketching and Modifying Tools" v3="Modeling Architecture Projects" v4="Quantification, Detailing, and Scheduling" v5="Massing Tools, Tests, Certification, and Personality" /> */}
+                        </AnimatedCard>
+                    </div>
                     {open && <>
                         <SyllabusMailer courses={course} onClose={handleClose} />
                     </>}
