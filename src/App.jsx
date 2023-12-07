@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { db, storage } from './components/Firebase'
+import { get } from 'react-scroll/modules/mixins/scroller'
 
 function App() {
 
@@ -13,6 +15,10 @@ function App() {
   const LinkedinRedirect = () => {
     window.open("https://www.linkedin.com/company/engvb-learning/", "_blank");
   }
+
+  console.log(db);
+  console.log(storage);
+
 
   return (
     <>
